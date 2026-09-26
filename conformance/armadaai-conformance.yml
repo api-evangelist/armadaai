@@ -1,0 +1,26 @@
+generated: '2026-09-26'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://platform.armada.ai/docs/platform-deep-dive/security-compliance
+sources:
+- https://platform.armada.ai/docs/platform-deep-dive/security-compliance
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: 'Compliance Ready : ISO 27001 and SOC 2 certified platform'
+- id: soc2
+  conforms: true
+  evidence: 'Compliance Ready : ISO 27001 and SOC 2 certified platform'
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: no securitySchemes declared
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://platform.armada.ai/docs/platform-deep-dive/security-compliance

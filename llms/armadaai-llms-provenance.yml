@@ -1,0 +1,6 @@
+generated: '2026-09-26'
+method: probed
+generator: harvest-llms.py
+source: https://docs.armada.ai/llms.txt
+bytes: 11877
+note: saved verbatim; the provider's own document

@@ -1,0 +1,107 @@
+openapi: 3.1.0
+info:
+  title: Armadaai API
+  version: '2026-09-26'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-26: 5 operation(s) read from 3 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Armadaai has published no machine-readable contract that the
+    pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 1
+    pages-with-code: 3
+    pages-read: 3
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-26'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://platform.armada.ai/docs/developer-resources/debugging-guides
+  - https://platform.armada.ai/docs/developer-resources/mini-kubernetes-solutions
+  - https://platform.armada.ai/docs/developer-resources/recommended-kubectl-plugins
+servers:
+- url: https://github.com
+paths:
+  /:
+    get:
+      operationId: get
+      tags:
+      - Api
+      summary: GET /
+      x-source: https://platform.armada.ai/docs/developer-resources/debugging-guides
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -v http://external-service.com # Verify internal service connectivity kubectl exec -it < pod-name > -- telnet < service-name\
+          \ > < port > \n Performance Issues ​ \n When applications are running but experiencing poor performance, use this systematic approach.\
+          \ \n Step 1: Monitor Resource Usage ​ \n Start by understanding current resource consumption: "
+  /health:
+    get:
+      operationId: get_health
+      tags:
+      - Health
+      summary: GET /health
+      x-source: https://platform.armada.ai/docs/developer-resources/debugging-guides
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -s http://api.example.com/health # Verify internal service response times kubectl exec -it < pod-name > -- time curl -s\
+          \ http://internal-service/health \n Step 5: Resource Optimization ​ \n Based on findings, optimize resource allocation: "
+  /kubernetes-sigs/krew/releases/latest/download:
+    get:
+      operationId: get_kubernetes_sigs_krew_releases_latest_download
+      tags:
+      - Kubernetes Sigs
+      summary: GET /kubernetes-sigs/krew/releases/latest/download
+      x-source: https://platform.armada.ai/docs/developer-resources/recommended-kubectl-plugins
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -fsSLO \"https://github.com/kubernetes-sigs/krew/releases/latest/download/ ${KREW} .tar.gz\" && tar zxvf \" ${KREW} .tar.gz\"\
+          \ && ./ ${KREW} install krew ) # Add krew to your PATH (follow the output instructions) \n Once Krew is installed, you can discover\
+          \ and install plugins with simple commands like kubectl krew search and kubectl krew install <plugin> . \n Essential Plugins and How\
+          \ to Use Them ​ "
+  /kubernetes-sigs/krew/releases/latest/download/:
+    get:
+      operationId: get_kubernetes_sigs_krew_releases_latest_download
+      tags:
+      - Kubernetes Sigs
+      summary: Download the latest Krew release archive.
+      x-source: https://platform.armada.ai/docs/developer-resources/recommended-kubectl-plugins
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /metrics:
+    get:
+      operationId: get_metrics
+      tags:
+      - Metrics
+      summary: GET /metrics
+      x-source: https://platform.armada.ai/docs/developer-resources/debugging-guides
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl http://localhost:9090/metrics # For custom applications, check health endpoints curl http://localhost:8080/health curl\
+          \ http://localhost:8080/ready \n Metrics to Focus On: \n Request latency and throughput \n Database connection pool utilization \n Cache\
+          \ hit/miss ratios \n Queue depths and processing times \n Step 3: Deep Dive into Logs ​ \n Analyze log patterns to identify performance\
+          \ bottlenecks: "
+tags:
+- name: Api
+- name: Health
+- name: Kubernetes Sigs
+- name: Metrics
