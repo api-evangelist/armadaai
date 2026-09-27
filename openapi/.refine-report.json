@@ -1,0 +1,23 @@
+{
+  "provider": "armadaai",
+  "sources": [
+    "_ae-authored/armadaai-openapi-generated.yml"
+  ],
+  "outputs": [
+    "armadaai-armadaai-api-api-openapi.yml",
+    "armadaai-health-api-openapi.yml",
+    "armadaai-kubernetes-sigs-api-openapi.yml",
+    "armadaai-metrics-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "armadaai-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "armadaai-openapi-generated.yml: tagged paths GET / -> Armadaai API",
+    "armadaai-openapi-generated.yml: declared missing tag: Armadaai API",
+    "apis.yml register: written (+4 apis, 4 total)"
+  ],
+  "skipped": []
+}

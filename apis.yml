@@ -67,16 +67,46 @@ common:
   url: https://www.armada.ai
 
 apis:
-- aid: armadaai:armadaai-api
-  name: Armadaai API
-  description: 'Armadaai API as documented publicly: 5 operations. Contract generated from the documentation by API Evangelist (2026-09-26); not
-    the provider''s own document.'
+- aid: armadaai:armadaai-armadaai-api-api
+  name: Armadaai Armadaai API
+  description: The Armadaai API API from Armadaai — 1 operation(s) for armadaai api.
   humanURL: https://platform.armada.ai/docs/developer-resources/debugging-guides
   baseURL: https://github.com
+  tags:
+  - Armadaai API
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/armadaai-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/armadaai-armadaai-api-api-openapi.yml
+- aid: armadaai:armadaai-health-api
+  name: Armadaai Health API
+  description: The Health API from Armadaai — 1 operation(s) for health.
+  humanURL: https://platform.armada.ai/docs/developer-resources/debugging-guides
+  baseURL: https://github.com
+  tags:
+  - Health
+  properties:
+  - type: OpenAPI
+    url: openapi/armadaai-health-api-openapi.yml
+- aid: armadaai:armadaai-kubernetes-sigs-api
+  name: Armadaai Kubernetes Sigs API
+  description: The Kubernetes Sigs API from Armadaai — 2 operation(s) for kubernetes sigs.
+  humanURL: https://platform.armada.ai/docs/developer-resources/debugging-guides
+  baseURL: https://github.com
+  tags:
+  - Kubernetes Sigs
+  properties:
+  - type: OpenAPI
+    url: openapi/armadaai-kubernetes-sigs-api-openapi.yml
+- aid: armadaai:armadaai-metrics-api
+  name: Armadaai Metrics API
+  description: The Metrics API from Armadaai — 1 operation(s) for metrics.
+  humanURL: https://platform.armada.ai/docs/developer-resources/debugging-guides
+  baseURL: https://github.com
+  tags:
+  - Metrics
+  properties:
+  - type: OpenAPI
+    url: openapi/armadaai-metrics-api-openapi.yml
 x-enrichment:
   date: '2026-09-26'
   status: enriched

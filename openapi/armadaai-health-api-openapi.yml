@@ -1,0 +1,39 @@
+openapi: 3.2.0
+info:
+  title: Armadaai Health API
+  version: '2026-09-26'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-26: 5 operation(s) read from 3 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Armadaai has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 4
+    documentation: 1
+    pages-with-code: 3
+    pages-read: 3
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-26'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://platform.armada.ai/docs/developer-resources/debugging-guides
+  - https://platform.armada.ai/docs/developer-resources/mini-kubernetes-solutions
+  - https://platform.armada.ai/docs/developer-resources/recommended-kubectl-plugins
+servers:
+- url: https://github.com
+tags:
+- name: Health
+paths:
+  /health:
+    get:
+      operationId: get_health
+      tags:
+      - Health
+      summary: GET /health
+      x-source: https://platform.armada.ai/docs/developer-resources/debugging-guides
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -s http://api.example.com/health # Verify internal service response times kubectl exec -it < pod-name > -- time curl -s http://internal-service/health \n Step 5: Resource Optimization ​ \n Based on findings, optimize resource allocation: "
