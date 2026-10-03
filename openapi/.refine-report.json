@@ -17,7 +17,12 @@
     "armadaai-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "armadaai-openapi-generated.yml: tagged paths GET / -> Armadaai API",
     "armadaai-openapi-generated.yml: declared missing tag: Armadaai API",
-    "apis.yml register: written (+4 apis, 4 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "armadaai-armadaai-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "armadaai-health-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "armadaai-kubernetes-sigs-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "armadaai-metrics-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
